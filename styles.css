@@ -1,0 +1,438 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+section
+{
+  padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.Tindog, .Dice, .DrumKit, .Quiz
+{
+  font-family: 'Poppins', sans-serif;
+}
+.Tindog .Tindog-content,
+.Dice .Dice-content,
+.DrumKit .DrumKit-content ,
+ .Quiz .Quiz-content
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/* home section styling */
+.home{
+    display: flex;
+    background: url("images/hua-ling-RXDTb_XyQho-unsplash.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 30px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+
+/* Tindog */
+
+.Tindog .title:after{
+    content: "Dog";
+}
+.Tindog .Tindog-content .left
+{
+    width: 45%;
+}
+.Tindog .Tindog-content .left img
+{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.Tindog .Tindog-content .right
+{
+    width: 55%;
+}
+.Tindog .Tindog-content .right .text
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.Tindog .Tindog-content .right .text span
+
+{
+    color: crimson;
+}
+.Tindog .Tindog-content .right p
+{
+    text-align: justify;
+}
+.Tindog .Tindog-content .right a
+{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.Tindog .Tindog-content .right a:hover
+
+{
+    color: crimson;
+    background: none;
+}
+/* Dice */
+.Dice, .Quiz
+{
+  color:#fff;
+  background: #111;
+}
+.Dice .title:before,
+.Quiz .title:before
+{
+      background: #fff;
+}
+.Dice .title:after{
+  background: #111;
+    content: "Dice";
+}
+.Dice .Dice-content .left
+
+{
+    width: 45%;
+}
+.Dice .Dice-content .left img
+{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.Dice .Dice-content .right
+{
+    width: 55%;
+}
+.Dice .Dice-content .right .text
+{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.Dice .Dice-content .right .text span
+
+{
+    color: crimson;
+}
+.Dice .Dice-content .right p
+{
+    text-align: justify;
+}
+.Dice .Dice-content .right a
+{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.Dice .Dice-content .right a:hover
+
+{
+    color: crimson;
+    background: none;
+}
+/* DrumKit */
+
+.DrumKit .title:after{
+    content: "DrumKit";
+}
+.DrumKit .DrumKit-content .left
+
+{
+    width: 45%;
+}
+.DrumKit .DrumKit-content .left img
+{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.DrumKit .DrumKit-content .right
+{
+    width: 55%;
+}
+.DrumKit .DrumKit-content .right .text
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.DrumKit .DrumKit-content .right .text span
+
+{
+    color: crimson;
+}
+.DrumKit .DrumKit-content .right p
+{
+    text-align: justify;
+}
+.DrumKit .DrumKit-content .right a
+{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.DrumKit .DrumKit-content .right a:hover
+
+{
+    color: crimson;
+    background: none;
+}
+/* Quiz */
+
+.Quiz  .title:after{
+  background: #111;
+    content: "Quiz";
+}
+.Quiz .Quiz-content .left
+
+{
+    width: 45%;
+}
+.Quiz .Quiz-content .left img
+{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.Quiz .Quiz-content .right
+{
+    width: 55%;
+}
+.Quiz .Quiz-content .right .text
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.Quiz .Quiz-content .right .text span
+
+{
+    color: crimson;
+}
+.Quiz .Quiz-content .right p
+{
+    text-align: justify;
+}
+.Quiz .Quiz-content .right a
+{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.Quiz .Quiz-content .right a:hover
+
+{
+    color: crimson;
+    background: none;
+}
+/* responsive media query start */
+@media (max-width: 1300px) {
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1104px) {
+    .Tindog .Tindog-content .left img,
+    .Dice .Dice-content .left img,
+    .DrumKit .DrumKit-content .left img,
+    .Quiz .Quiz-content .left img
+    {
+        height: 350px;
+        width: 350px;
+        margin-right: 70px;
+    }
+    .Tindog .Tindog-content .right p,
+    .Dice .Dice-content .right p,
+    .DrumKit .DrumKit-content .right p,
+    .Quiz .Quiz-content .right p{
+      margin-right: 70px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .Tindog .Tindog-content.column .column,
+    .Dice .Dice-content .column,
+    .DrumKit .DrumKit-content .column,
+    .Quiz .Quiz-content .column
+    {
+        width: 100%;
+    }
+    .Tindog .Tindog-content .left,
+    .Dice .Dice-content .left,
+    .DrumKit .DrumKit-content .left,
+    .Quiz .Quiz-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .Tindog .Tindog-content .right,
+    .Dice .Dice-content .right,
+    .DrumKit .DrumKit-content .right,
+    .Quiz .Quiz-content .right{
+        flex: 100%;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2{
+        font-size: 40px;
+    }
+    .home .home-content .text-3{
+        font-size: 23px;
+    }
+    .Tindog .Tindog-content .right .text,
+    .Dice .Dice-content .right .text,
+    .DrumKit .DrumKit-content .right .text,
+    .Quiz .Quiz-content .right .text
+   {
+        font-size: 19px;
+    }
+}
